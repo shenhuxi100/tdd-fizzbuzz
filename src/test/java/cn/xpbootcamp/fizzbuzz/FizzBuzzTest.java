@@ -53,7 +53,14 @@ public class FizzBuzzTest {
     }
 
     @Test
-    void should_say_FizzBuzzWhizz_when_reported_figure_is_multiple_of_5_and_7 () {
+    void should_say_FizzBuzzWhizz_when_reported_figure_is_multiple_of_3_5_and_7 () {
         assertEquals("FizzBuzzWhizz", FizzBuzz.getReportedFigure(105));
+    }
+
+    @Test
+    void should_say_FizzBuzzWhizz_when_reported_figure_is_not_multiple_of_3_5_and_7 () {
+        assertEquals("104", FizzBuzz.getReportedFigure(104));
+        assertEquals("11", FizzBuzz.getReportedFigure(11));
+        assertEquals("52", FizzBuzz.getReportedFigure(52));
     }
 }
