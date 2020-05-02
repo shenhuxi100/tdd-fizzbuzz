@@ -1,9 +1,8 @@
 package cn.xpbootcamp.fizzbuzz;
 
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class FizzBuzzTest {
 
@@ -14,7 +13,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    void should_say_fizz_when_reported_figure_is_multiple_of_3 () {
+    void should_say_Fizz_when_reported_figure_is_multiple_of_3 () {
         assertEquals("Fizz", FizzBuzz.getReportedFigure(3));
         assertEquals("Fizz", FizzBuzz.getReportedFigure(6));
         assertEquals("Fizz", FizzBuzz.getReportedFigure(9));
@@ -22,7 +21,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    void should_say_fizz_when_reported_figure_is_multiple_of_5 () {
+    void should_say_Buzz_when_reported_figure_is_multiple_of_5 () {
         assertEquals("Buzz", FizzBuzz.getReportedFigure(5));
         assertEquals("Buzz", FizzBuzz.getReportedFigure(10));
         assertEquals("Buzz", FizzBuzz.getReportedFigure(20));
@@ -30,8 +29,15 @@ public class FizzBuzzTest {
     }
 
     @Test
-    void should_say_fizz_when_reported_figure_is_multiple_of_3_and_5 () {
+    void should_say_FizzBuzz_when_reported_figure_is_multiple_of_3_and_5 () {
         assertEquals("FizzBuzz", FizzBuzz.getReportedFigure(15));
         assertEquals("FizzBuzz", FizzBuzz.getReportedFigure(30));
+    }
+
+    @Test
+    void should_say_Whizz_when_reported_figure_is_multiple_of_7 () {
+        assertEquals("Whizz", FizzBuzz.getReportedFigure(7));
+        assertEquals("Whizz", FizzBuzz.getReportedFigure(14));
+        assertEquals("Whizz", FizzBuzz.getReportedFigure(28));
     }
 }
