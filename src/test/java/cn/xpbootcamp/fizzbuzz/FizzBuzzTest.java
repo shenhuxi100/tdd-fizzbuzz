@@ -17,7 +17,6 @@ public class FizzBuzzTest {
         assertEquals("Fizz", FizzBuzz.getReportedFigure(3));
         assertEquals("Fizz", FizzBuzz.getReportedFigure(6));
         assertEquals("Fizz", FizzBuzz.getReportedFigure(9));
-        assertEquals("Fizz", FizzBuzz.getReportedFigure(21));
     }
 
     @Test
@@ -39,5 +38,11 @@ public class FizzBuzzTest {
         assertEquals("Whizz", FizzBuzz.getReportedFigure(7));
         assertEquals("Whizz", FizzBuzz.getReportedFigure(14));
         assertEquals("Whizz", FizzBuzz.getReportedFigure(28));
+    }
+    @Test
+    void should_say_FizzWhizz_when_reported_figure_is_multiple_of_3_and_7 () {
+        assertEquals("FizzWhizz", FizzBuzz.getReportedFigure(21));
+        assertEquals("FizzWhizz", FizzBuzz.getReportedFigure(42));
+        assertEquals("FizzWhizz", FizzBuzz.getReportedFigure(63));
     }
 }
