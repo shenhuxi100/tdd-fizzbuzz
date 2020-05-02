@@ -24,7 +24,6 @@ public class FizzBuzzTest {
         assertEquals("Buzz", FizzBuzz.getReportedFigure(5));
         assertEquals("Buzz", FizzBuzz.getReportedFigure(10));
         assertEquals("Buzz", FizzBuzz.getReportedFigure(20));
-        assertEquals("Buzz", FizzBuzz.getReportedFigure(35));
     }
 
     @Test
@@ -39,10 +38,22 @@ public class FizzBuzzTest {
         assertEquals("Whizz", FizzBuzz.getReportedFigure(14));
         assertEquals("Whizz", FizzBuzz.getReportedFigure(28));
     }
+
     @Test
     void should_say_FizzWhizz_when_reported_figure_is_multiple_of_3_and_7 () {
         assertEquals("FizzWhizz", FizzBuzz.getReportedFigure(21));
         assertEquals("FizzWhizz", FizzBuzz.getReportedFigure(42));
         assertEquals("FizzWhizz", FizzBuzz.getReportedFigure(63));
+    }
+
+    @Test
+    void should_say_BuzzWhizz_when_reported_figure_is_multiple_of_5_and_7 () {
+        assertEquals("BuzzWhizz", FizzBuzz.getReportedFigure(35));
+        assertEquals("BuzzWhizz", FizzBuzz.getReportedFigure(70));
+    }
+
+    @Test
+    void should_say_FizzBuzzWhizz_when_reported_figure_is_multiple_of_5_and_7 () {
+        assertEquals("FizzBuzzWhizz", FizzBuzz.getReportedFigure(105));
     }
 }
