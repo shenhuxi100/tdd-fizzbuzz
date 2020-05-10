@@ -70,7 +70,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    void should_say_BuzzWhizz_given_reported_figure_contains_5_when_reporting () {
+    void should_not_say_Fizz_given_reported_figure_contains_5_when_reporting () {
         assertEquals("BuzzWhizz", FizzBuzz.getReportedFigure(35));
     }
 
@@ -81,7 +81,7 @@ public class FizzBuzzTest {
 
 
     @Test
-    void should_say_Whizz_given_reported_figure_contains_7_and_multiple_of_5_when_reporting () {
+    void should_not_say_Buzz_given_reported_figure_contains_7_and_multiple_of_5_when_reporting () {
         assertEquals("Whizz", FizzBuzz.getReportedFigure(70));
     }
 }
